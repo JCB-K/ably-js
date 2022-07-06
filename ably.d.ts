@@ -2558,6 +2558,16 @@ declare namespace Types {
    */
   class RealtimePresenceCallbacks extends RealtimePresenceBase {
     /**
+     * BEGIN CANONICAL DOCSTRING
+     * Retrieves the current members present on the channel and the metadata for each member, such as their [`PresenceAction`]{@link} and ID. Returns an array of [`PresenceMessage`]{@link} objects.
+     *
+     * @param waitForSync - Sets whether to wait for a full presence set synchronization between Ably and the clients on the channel to complete before returning the results. Synchronization begins as soon as the channel is [`attached`]{@link}. When set to `true` the results will be returned as soon as the sync is complete. When set to `false` the current list of members will be returned without the sync completing.
+     * @param clientId - Filters the array of returned presence members by a specific client using its ID.
+     * @param connectionId - Filters the array of returned presence members by a specific connection using its ID.
+     *
+     * @returns An array of [`PresenceMessage`]{@link} objects.
+     * END CANONICAL DOCSTRING
+     *
      * BEGIN LEGACY DOCSTRING
      * Get the current presence member set for this channel. Typically, this method returns the member set immediately as the member set is retained in memory by the client. However, by default this method will wait until the presence member set is synchronized, so if the synchronization is not yet complete following a channel being attached, this method will wait until the presence member set is synchronized.
      *
@@ -2571,6 +2581,16 @@ declare namespace Types {
      */
     get(params?: RealtimePresenceParams, callback?: realtimePresenceGetCallback): void;
     /**
+     * BEGIN CANONICAL DOCSTRING
+     * Retrieves the current members present on the channel and the metadata for each member, such as their [`PresenceAction`]{@link} and ID. Returns an array of [`PresenceMessage`]{@link} objects.
+     *
+     * @param waitForSync - Sets whether to wait for a full presence set synchronization between Ably and the clients on the channel to complete before returning the results. Synchronization begins as soon as the channel is [`attached`]{@link}. When set to `true` the results will be returned as soon as the sync is complete. When set to `false` the current list of members will be returned without the sync completing.
+     * @param clientId - Filters the array of returned presence members by a specific client using its ID.
+     * @param connectionId - Filters the array of returned presence members by a specific connection using its ID.
+     *
+     * @returns An array of [`PresenceMessage`]{@link} objects.
+     * END CANONICAL DOCSTRING
+     *
      * BEGIN LEGACY DOCSTRING
      * Get the current presence member set for this channel. Typically, this method returns the member set immediately as the member set is retained in memory by the client. However, by default this method will wait until the presence member set is synchronized, so if the synchronization is not yet complete following a channel being attached, this method will wait until the presence member set is synchronized.
      *
