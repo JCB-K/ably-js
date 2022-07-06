@@ -1725,6 +1725,18 @@ declare namespace Types {
      */
     channels: Types.Channels<Types.ChannelCallbacks>;
     /**
+     * BEGIN CANONICAL DOCSTRING
+     * Makes a REST request to a provided path. This is provided as a convenience for developers who wish to use REST API functionality that is either not documented or is not yet included in the public API, without having to directly handle features such as authentication, paging, fallback hosts, MsgPack and JSON support.
+     *
+     * @param method - Request method to use such as `GET`, `POST`.
+     * @param path - Request path.
+     * @param params - Parameters for the REST request.
+     * @param body - JSON body for the request.
+     * @param headers - Headers for the request.
+     *
+     * @returns An [`HttpPaginatedResponse`]{@link} response object returned by the HTTP request, containing an empty or JSON-encodable object.
+     * END CANONICAL DOCSTRING
+     *
      * BEGIN LEGACY DOCSTRING
      * Makes a REST request to a provided path. This is provided as a convenience for developers who wish to use REST API functionality that is either not documented or is not yet included in the public API, without having to handle authentication, paging, fallback hosts, MsgPack and JSON support, etc. themselves.
      * END LEGACY DOCSTRING
@@ -1816,6 +1828,18 @@ declare namespace Types {
      */
     channels: Types.Channels<Types.ChannelPromise>;
     /**
+     * BEGIN CANONICAL DOCSTRING
+     * Makes a REST request to a provided path. This is provided as a convenience for developers who wish to use REST API functionality that is either not documented or is not yet included in the public API, without having to directly handle features such as authentication, paging, fallback hosts, MsgPack and JSON support.
+     *
+     * @param method - Request method to use such as `GET`, `POST`.
+     * @param path - Request path.
+     * @param params - Parameters for the REST request.
+     * @param body - JSON body for the request.
+     * @param headers - Headers for the request.
+     *
+     * @returns An [`HttpPaginatedResponse`]{@link} response object returned by the HTTP request, containing an empty or JSON-encodable object.
+     * END CANONICAL DOCSTRING
+     *
      * BEGIN LEGACY DOCSTRING
      * Makes a REST request to a provided path. This is provided as a convenience for developers who wish to use REST API functionality that is either not documented or is not yet included in the public API, without having to handle authentication, paging, fallback hosts, MsgPack and JSON support, etc. themselves.
      * END LEGACY DOCSTRING
