@@ -2550,7 +2550,9 @@ declare namespace Types {
   }
 
   /**
-   * Not yet documented.
+   * BEGIN CANONICAL DOCSTRING
+   * The `RealtimePresence` object associated with a channel, enabling clients to enter, update and leave the presence set and for the retrieval of the current and historic presence set for the channel.
+   * END CANONICAL DOCSTRING
    */
   class RealtimePresenceCallbacks extends RealtimePresenceBase {
     /**
@@ -2729,7 +2731,9 @@ declare namespace Types {
   }
 
   /**
-   * Not yet documented.
+   * BEGIN CANONICAL DOCSTRING
+   * The `RealtimePresence` object associated with a channel, enabling clients to enter, update and leave the presence set and for the retrieval of the current and historic presence set for the channel.
+   * END CANONICAL DOCSTRING
    */
   class RealtimePresencePromise extends RealtimePresenceBase {
     /**
