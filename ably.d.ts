@@ -2603,6 +2603,17 @@ declare namespace Types {
      */
     get(callback?: realtimePresenceGetCallback): void;
     /**
+     * BEGIN CANONICAL DOCSTRING
+     * Retrieves a list of historic presence messages that occurred on the channel. Returns a paginated list of [`PresenceMessage`]{@link} objects.
+     *
+     * @param start - The time from which messages are retrieved, specified as a Unix timestamp.
+     * @param end - The time until messages are retrieved, specified as a Unix timestamp.
+     * @param direction - The order for which messages are returned in. The default is `Backwards` which orders messages from most recent to oldest.
+     * @param limit - An upper limit on the number of messages returned.
+     *
+     * @returns A paginated list of [`PresenceMessage`]{@link} objects.
+     * END CANONICAL DOCSTRING
+     *
      * BEGIN LEGACY DOCSTRING
      * Gets a paginated set of historical presence message events for this channel. If the channel is configured to persist messages to disk, then the presence message event history will typically be available for 24 – 72 hours. If not, presence message events are only retained in memory by the Ably service for two minutes.
      * END LEGACY DOCSTRING
@@ -2612,6 +2623,17 @@ declare namespace Types {
      */
     history(params?: RealtimeHistoryParams, callback?: paginatedResultCallback<PresenceMessage>): void;
     /**
+     * BEGIN CANONICAL DOCSTRING
+     * Retrieves a list of historic presence messages that occurred on the channel. Returns a paginated list of [`PresenceMessage`]{@link} objects.
+     *
+     * @param start - The time from which messages are retrieved, specified as a Unix timestamp.
+     * @param end - The time until messages are retrieved, specified as a Unix timestamp.
+     * @param direction - The order for which messages are returned in. The default is `Backwards` which orders messages from most recent to oldest.
+     * @param limit - An upper limit on the number of messages returned.
+     *
+     * @returns A paginated list of [`PresenceMessage`]{@link} objects.
+     * END CANONICAL DOCSTRING
+     *
      * BEGIN LEGACY DOCSTRING
      * Gets a paginated set of historical presence message events for this channel. If the channel is configured to persist messages to disk, then the presence message event history will typically be available for 24 – 72 hours. If not, presence message events are only retained in memory by the Ably service for two minutes.
      * END LEGACY DOCSTRING
@@ -2771,6 +2793,17 @@ declare namespace Types {
      */
     get(params?: RealtimePresenceParams): Promise<PresenceMessage[]>;
     /**
+     * BEGIN CANONICAL DOCSTRING
+     * Retrieves a list of historic presence messages that occurred on the channel. Returns a paginated list of [`PresenceMessage`]{@link} objects.
+     *
+     * @param start - The time from which messages are retrieved, specified as a Unix timestamp.
+     * @param end - The time until messages are retrieved, specified as a Unix timestamp.
+     * @param direction - The order for which messages are returned in. The default is `Backwards` which orders messages from most recent to oldest.
+     * @param limit - An upper limit on the number of messages returned.
+     *
+     * @returns A paginated list of [`PresenceMessage`]{@link} objects.
+     * END CANONICAL DOCSTRING
+     *
      * BEGIN LEGACY DOCSTRING
      * Gets a paginated set of historical presence message events for this channel. If the channel is configured to persist messages to disk, then the presence message event history will typically be available for 24 – 72 hours. If not, presence message events are only retained in memory by the Ably service for two minutes.
      * END LEGACY DOCSTRING
