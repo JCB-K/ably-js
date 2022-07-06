@@ -3367,7 +3367,10 @@ declare namespace Types {
   };
 
   /**
-   * Not yet documented.
+   * BEGIN CANONICAL DOCSTRING
+   * The `Crypto` object ensures that message payloads are encrypted, can never be decrypted by Ably, and can only be decrypted by other clients that share the same secret symmetric key.
+   * END CANONICAL DOCSTRING
+   *
    */
   interface Crypto {
     /**
