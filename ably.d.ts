@@ -2720,6 +2720,13 @@ declare namespace Types {
      */
     enter(callback?: errorCallback): void;
     /**
+     * BEGIN CANONICAL DOCSTRING
+     * Updates the `data` payload for a presence member. If called before entering the presence set, this is treated as an `enter` event. An optional callback may be provided to notify of the success or failure of the operation.
+     *
+     * @param Data - The payload to update for the presence member.
+     * @param extras - A JSON object of arbitrary `key:value` pairs that may contain metadata, and/or ancillary payloads.
+     * END CANONICAL DOCSTRING
+     *
      * BEGIN LEGACY DOCSTRING
      * Update the current member’s data and broadcast an update event to all subscribers. data may be null. If the channel is initialized (i.e. no attempt to attach has yet been made for this channel), then calling update will implicitly attach the channel.
      * END LEGACY DOCSTRING
@@ -2729,6 +2736,13 @@ declare namespace Types {
      */
     update(data?: any, callback?: errorCallback): void;
     /**
+     * BEGIN CANONICAL DOCSTRING
+     * Updates the `data` payload for a presence member. If called before entering the presence set, this is treated as an `enter` event. An optional callback may be provided to notify of the success or failure of the operation.
+     *
+     * @param Data - The payload to update for the presence member.
+     * @param extras - A JSON object of arbitrary `key:value` pairs that may contain metadata, and/or ancillary payloads.
+     * END CANONICAL DOCSTRING
+     *
      * BEGIN LEGACY DOCSTRING
      * Update the current member’s data and broadcast an update event to all subscribers. data may be null. If the channel is initialized (i.e. no attempt to attach has yet been made for this channel), then calling update will implicitly attach the channel.
      * END LEGACY DOCSTRING
@@ -2895,6 +2909,13 @@ declare namespace Types {
      */
     enter(data?: any): Promise<void>;
     /**
+     * BEGIN CANONICAL DOCSTRING
+     * Updates the `data` payload for a presence member. If called before entering the presence set, this is treated as an `enter` event. An optional callback may be provided to notify of the success or failure of the operation.
+     *
+     * @param Data - The payload to update for the presence member.
+     * @param extras - A JSON object of arbitrary `key:value` pairs that may contain metadata, and/or ancillary payloads.
+     * END CANONICAL DOCSTRING
+     *
      * BEGIN LEGACY DOCSTRING
      * Update the current member’s data and broadcast an update event to all subscribers. data may be null. If the channel is initialized (i.e. no attempt to attach has yet been made for this channel), then calling update will implicitly attach the channel.
      * END LEGACY DOCSTRING
