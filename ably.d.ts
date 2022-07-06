@@ -3577,6 +3577,10 @@ declare namespace Types {
      */
     static fromEncodedArray: fromEncodedArray<PresenceMessage>;
     /**
+     * BEGIN CANONICAL DOCSTRING
+     * The type of [`PresenceAction`]{@link} the `PresenceMessage` is for.
+     * END CANONICAL DOCSTRING
+     *
      * BEGIN LEGACY DOCSTRING
      * The event signified by a PresenceMessage.
      * END LEGACY DOCSTRING
