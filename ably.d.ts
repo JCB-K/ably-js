@@ -2751,6 +2751,13 @@ declare namespace Types {
      */
     update(callback?: errorCallback): void;
     /**
+     * BEGIN CANONICAL DOCSTRING
+     * Leaves the presence set for the channel. A client must have previously entered the presence set before they can leave it. An optional callback may be provided to notify of the success or failure of the operation.
+     *
+     * @param Data - The payload associated with the presence member.
+     * @param extras - A JSON object of arbitrary `key:value` pairs that may contain metadata, and/or ancillary payloads.
+     * END CANONICAL DOCSTRING
+     *
      * BEGIN LEGACY DOCSTRING
      * Leave a presence channel and emit data that is associated with the current leaving member.
      * END LEGACY DOCSTRING
@@ -2760,6 +2767,13 @@ declare namespace Types {
      */
     leave(data?: any, callback?: errorCallback): void;
     /**
+     * BEGIN CANONICAL DOCSTRING
+     * Leaves the presence set for the channel. A client must have previously entered the presence set before they can leave it. An optional callback may be provided to notify of the success or failure of the operation.
+     *
+     * @param Data - The payload associated with the presence member.
+     * @param extras - A JSON object of arbitrary `key:value` pairs that may contain metadata, and/or ancillary payloads.
+     * END CANONICAL DOCSTRING
+     *
      * BEGIN LEGACY DOCSTRING
      * Leave a presence channel without emitting any data.
      * END LEGACY DOCSTRING
@@ -2924,6 +2938,13 @@ declare namespace Types {
      */
     update(data?: any): Promise<void>;
     /**
+     * BEGIN CANONICAL DOCSTRING
+     * Leaves the presence set for the channel. A client must have previously entered the presence set before they can leave it. An optional callback may be provided to notify of the success or failure of the operation.
+     *
+     * @param Data - The payload associated with the presence member.
+     * @param extras - A JSON object of arbitrary `key:value` pairs that may contain metadata, and/or ancillary payloads.
+     * END CANONICAL DOCSTRING
+     *
      * BEGIN LEGACY DOCSTRING
      * Leave a presence channel and emit data that is associated with the current leaving member.
      * END LEGACY DOCSTRING
