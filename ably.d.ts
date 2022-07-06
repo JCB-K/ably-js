@@ -2394,6 +2394,16 @@ declare namespace Types {
    */
   class PresenceCallbacks {
     /**
+     * BEGIN CANONICAL DOCSTRING
+     * Retrieves the current members present on the channel and the metadata for each member, such as their [`PresenceAction`]{@link} and ID. Returns a paginated list of [`PresenceMessage`]{@link} objects.
+     *
+     * @param limit - An upper limit on the number of messages returned.
+     * @param clientId - Filters the list of returned presence members by a specific client using its ID.
+     * @param connectionId - Filters the list of returned presence members by a specific connection using its ID.
+     *
+     * @returns A paginated list of [`PresenceMessage`]{@link} objects.
+     * END CANONICAL DOCSTRING
+     *
      * BEGIN LEGACY DOCSTRING
      * Get the current presence member set for this channel. In the REST client library this method directly queries [Ably’s REST presence API](https://ably.com/documentation/rest-api#presence).
      * END LEGACY DOCSTRING
@@ -2403,6 +2413,16 @@ declare namespace Types {
      */
     get(params?: RestPresenceParams, callback?: paginatedResultCallback<PresenceMessage>): void;
     /**
+     * BEGIN CANONICAL DOCSTRING
+     * Retrieves the current members present on the channel and the metadata for each member, such as their [`PresenceAction`]{@link} and ID. Returns a paginated list of [`PresenceMessage`]{@link} objects.
+     *
+     * @param limit - An upper limit on the number of messages returned.
+     * @param clientId - Filters the list of returned presence members by a specific client using its ID.
+     * @param connectionId - Filters the list of returned presence members by a specific connection using its ID.
+     *
+     * @returns A paginated list of [`PresenceMessage`]{@link} objects.
+     * END CANONICAL DOCSTRING
+     *
      * BEGIN LEGACY DOCSTRING
      * Get the current presence member set for this channel. In the REST client library this method directly queries [Ably’s REST presence API](https://ably.com/documentation/rest-api#presence).
      * END LEGACY DOCSTRING
@@ -2436,6 +2456,16 @@ declare namespace Types {
    */
   class PresencePromise {
     /**
+     * BEGIN CANONICAL DOCSTRING
+     * Retrieves the current members present on the channel and the metadata for each member, such as their [`PresenceAction`]{@link} and ID. Returns a paginated list of [`PresenceMessage`]{@link} objects.
+     *
+     * @param limit - An upper limit on the number of messages returned.
+     * @param clientId - Filters the list of returned presence members by a specific client using its ID.
+     * @param connectionId - Filters the list of returned presence members by a specific connection using its ID.
+     *
+     * @returns A paginated list of [`PresenceMessage`]{@link} objects.
+     * END CANONICAL DOCSTRING
+     *
      * BEGIN LEGACY DOCSTRING
      * Get the current presence member set for this channel. In the REST client library this method directly queries [Ably’s REST presence API](https://ably.com/documentation/rest-api#presence).
      * END LEGACY DOCSTRING
