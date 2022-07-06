@@ -1758,6 +1758,18 @@ declare namespace Types {
     ): void;
     /**
      * BEGIN LEGACY DOCSTRING
+     * Queries the [REST `/stats` API](https://ably.com/docs/rest-api#stats) and retrieves your application's usage statistics. A [`PaginatedResult`]{@link} object is returned, containing an array of stats for the first page of results. `PaginatedResult` objects are iterable providing a means to page through historical statistics. See the [Stats docs](https://ably.com/docs/general/statistics).
+     *
+     * @param start - The time from which stats are retrieved, specified as a Unix timestamp.
+     * @param end - The time until stats are retrieved, specified as a Unix timestamp.
+     * @param direction - The order for which stats are returned in. The default is `Backwards` which orders stats from most recent to oldest. |
+     * @param limit - An upper limit on the number of stats returned, up to 1000.
+     * @param unit - `minute`, `hour`, `day` or `month`. Based on the unit selected, the given `start` or `end` times are rounded down to the start of the relevant interval depending on the unit granularity of the query.
+     *
+     * @returns A [`PaginatedResult`]{@link} object containing an array of stats for the first page of results.
+     * END LEGACY DOCSTRING
+     *
+     * BEGIN LEGACY DOCSTRING
      * Queries the [REST `/stats` API](https://ably.com/documentation/rest-api#stats) and retrieves your application’s usage statistics. A PaginatedResult is returned, containing an array of stats for the first page of results. PaginatedResult objects are iterable providing a means to page through historical statistics. [See an example set of raw stats returned via the REST API](https://ably.com/documentation/general/statistics).
      * END LEGACY DOCSTRING
      *
@@ -1766,6 +1778,18 @@ declare namespace Types {
      */
     stats(params?: any, callback?: Types.paginatedResultCallback<Types.Stats>): void;
     /**
+     * BEGIN LEGACY DOCSTRING
+     * Queries the [REST `/stats` API](https://ably.com/docs/rest-api#stats) and retrieves your application's usage statistics. A [`PaginatedResult`]{@link} object is returned, containing an array of stats for the first page of results. `PaginatedResult` objects are iterable providing a means to page through historical statistics. See the [Stats docs](https://ably.com/docs/general/statistics).
+     *
+     * @param start - The time from which stats are retrieved, specified as a Unix timestamp.
+     * @param end - The time until stats are retrieved, specified as a Unix timestamp.
+     * @param direction - The order for which stats are returned in. The default is `Backwards` which orders stats from most recent to oldest. |
+     * @param limit - An upper limit on the number of stats returned, up to 1000.
+     * @param unit - `minute`, `hour`, `day` or `month`. Based on the unit selected, the given `start` or `end` times are rounded down to the start of the relevant interval depending on the unit granularity of the query.
+     *
+     * @returns A [`PaginatedResult`]{@link} object containing an array of stats for the first page of results.
+     * END LEGACY DOCSTRING
+     *
      * BEGIN LEGACY DOCSTRING
      * Queries the [REST `/stats` API](https://ably.com/documentation/rest-api#stats) and retrieves your application’s usage statistics. A PaginatedResult is returned, containing an array of stats for the first page of results. PaginatedResult objects are iterable providing a means to page through historical statistics. [See an example set of raw stats returned via the REST API](https://ably.com/documentation/general/statistics).
      * END LEGACY DOCSTRING
@@ -1858,6 +1882,18 @@ declare namespace Types {
       headers?: any
     ): Promise<Types.HttpPaginatedResponse<T>>;
     /**
+     * BEGIN LEGACY DOCSTRING
+     * Queries the [REST `/stats` API](https://ably.com/docs/rest-api#stats) and retrieves your application's usage statistics. A [`PaginatedResult`]{@link} object is returned, containing an array of stats for the first page of results. `PaginatedResult` objects are iterable providing a means to page through historical statistics. See the [Stats docs](https://ably.com/docs/general/statistics).
+     *
+     * @param start - The time from which stats are retrieved, specified as a Unix timestamp.
+     * @param end - The time until stats are retrieved, specified as a Unix timestamp.
+     * @param direction - The order for which stats are returned in. The default is `Backwards` which orders stats from most recent to oldest. |
+     * @param limit - An upper limit on the number of stats returned, up to 1000.
+     * @param unit - `minute`, `hour`, `day` or `month`. Based on the unit selected, the given `start` or `end` times are rounded down to the start of the relevant interval depending on the unit granularity of the query.
+     *
+     * @returns A [`PaginatedResult`]{@link} object containing an array of stats for the first page of results.
+     * END LEGACY DOCSTRING
+     *
      * BEGIN LEGACY DOCSTRING
      * This method queries the [REST `/stats` API](https://ably.com/documentation/rest-api#stats) and retrieves your application’s usage statistics. A PaginatedResult is returned, containing an array of stats for the first page of results. PaginatedResult objects are iterable providing a means to page through historical statistics. [See an example set of raw stats returned via the REST API](https://ably.com/documentation/general/statistics).
      * END LEGACY DOCSTRING
