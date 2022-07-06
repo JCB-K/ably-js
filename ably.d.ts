@@ -1715,6 +1715,10 @@ declare namespace Types {
      */
     auth: Types.AuthCallbacks;
     /**
+     * BEGIN CANONICAL DOCSTRING
+     * A [`Channel`]{@link} collection object.
+     * END CANONICAL DOCSTRING
+     *
      * BEGIN LEGACY DOCSTRING
      * A reference to the `Channel` collection instance.
      * END LEGACY DOCSTRING
@@ -1802,6 +1806,10 @@ declare namespace Types {
      */
     auth: Types.AuthPromise;
     /**
+     * BEGIN CANONICAL DOCSTRING
+     * A [`Channel`]{@link} collection object.
+     * END CANONICAL DOCSTRING
+     *
      * BEGIN LEGACY DOCSTRING
      * A reference to the `Channel` collection instance.
      * END LEGACY DOCSTRING
