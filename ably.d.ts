@@ -2642,6 +2642,12 @@ declare namespace Types {
      */
     history(callback?: paginatedResultCallback<PresenceMessage>): void;
     /**
+     * BEGIN CANONICAL DOCSTRING
+     * Registers a listener that is called each time a [`PresenceMessage`]{@link} matching a given [`PresenceAction`]{@link} is received on the channel, such as a new member entering the presence set.
+     *
+     * @param PresenceAction - A specific [`PresenceAction`]{@link} to register the listener for.
+     * END CANONICAL DOCSTRING
+     *
      * BEGIN LEGACY DOCSTRING
      * Subscribe to presence message events with a given PresenceAction on this channel. The caller supplies a handler, which is called each time one or more presence events occurs such as a member entering or leaving a channel.
      * END LEGACY DOCSTRING
@@ -2816,6 +2822,12 @@ declare namespace Types {
      */
     history(params?: RealtimeHistoryParams): Promise<PaginatedResult<PresenceMessage>>;
     /**
+     * BEGIN CANONICAL DOCSTRING
+     * Registers a listener that is called each time a [`PresenceMessage`]{@link} matching a given [`PresenceAction`]{@link} is received on the channel, such as a new member entering the presence set.
+     *
+     * @param PresenceAction - A specific [`PresenceAction`]{@link} to register the listener for.
+     * END CANONICAL DOCSTRING
+     *
      * BEGIN LEGACY DOCSTRING
      * Subscribe to presence message events with a given PresenceAction on this channel. The caller supplies a handler, which is called each time one or more presence events occurs such as a member entering or leaving a channel.
      * END LEGACY DOCSTRING
