@@ -2068,6 +2068,12 @@ declare namespace Types {
      */
     stats(callback: Types.paginatedResultCallback<Types.Stats>): void;
     /**
+     * BEGIN CANONICAL DOCSTRING
+     * Retrieves the time from the Ably service as a Unix timestamp in milliseconds. Clients that do not have access to a sufficiently well maintained time source and wish to issue Ably `TokenRequest`s with a more accurate timestamp should use the [`queryTime`]{@link} property of the [`ClientOption`]{@link} object instead of this method.
+     *
+     * @returns The time as a Unix timestamp.
+     * END CANONICAL DOCSTRING
+     *
      * BEGIN LEGACY DOCSTRING
      * Obtains the time from the Ably service as milliseconds since epoch. (Clients that do not have access to a sufficiently well maintained time source and wish to issue Ably TokenRequests with a more accurate timestamp should use the `queryTime` ClientOption instead of this method).
      * END LEGACY DOCSTRING
@@ -2164,6 +2170,12 @@ declare namespace Types {
      */
     stats(params?: any): Promise<Types.PaginatedResult<Types.Stats>>;
     /**
+     * BEGIN CANONICAL DOCSTRING
+     * Retrieves the time from the Ably service as a Unix timestamp in milliseconds. Clients that do not have access to a sufficiently well maintained time source and wish to issue Ably `TokenRequest`s with a more accurate timestamp should use the [`queryTime`]{@link} property of the [`ClientOption`]{@link} object instead of this method.
+     *
+     * @returns The time as a Unix timestamp.
+     * END CANONICAL DOCSTRING
+     *
      * BEGIN LEGACY DOCSTRING
      * Obtains the time from the Ably service as milliseconds since epoch. (Clients that do not have access to a sufficiently well maintained time source and wish to issue Ably TokenRequests with a more accurate timestamp should use the `queryTime` ClientOption instead of this method).
      * END LEGACY DOCSTRING
