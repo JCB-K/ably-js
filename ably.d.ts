@@ -2521,7 +2521,9 @@ declare namespace Types {
    */
   class RealtimePresenceBase {
     /**
-     * Not yet documented.
+     * BEGIN CANONICAL DOCSTRING
+     * Shows whether the presence set synchronization between Ably and the clients on the channel has been completed. Set to `true` when the sync is complete.
+     * END CANONICAL DOCSTRING
      */
     syncComplete: boolean;
     /**
