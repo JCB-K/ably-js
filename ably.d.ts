@@ -3607,6 +3607,10 @@ declare namespace Types {
      */
     connectionId: string;
     /**
+     * BEGIN CANONICAL DOCSTRING
+     * The payload of the `PresenceMessage`.
+     * END CANONICAL DOCSTRING
+     *
      * BEGIN LEGACY DOCSTRING
      * The presence update payload, if provided.
      * END LEGACY DOCSTRING
