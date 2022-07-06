@@ -3813,6 +3813,10 @@ declare namespace Types {
 export declare class Rest extends Types.RestCallbacks {}
 
 /**
+ * BEGIN CANONICAL DOCSTRING
+ * The `Realtime` object extends the REST client and provides the functionality available in the REST client, in addition to realtime-specific features.
+ * END CANONICAL DOCSTRING
+ *
  * BEGIN LEGACY DOCSTRING
  * The Ably Realtime client establishes and maintains a persistent connection to Ably and provides methods to publish and subscribe to messages over a low latency realtime connection.
  *
