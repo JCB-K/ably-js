@@ -1962,7 +1962,10 @@ declare namespace Types {
      */
     clientId: string;
     /**
-     * Not yet documented.
+     * BEGIN CANONICAL DOCSTRING
+     * Calls `connection.close()` and causes the connection to close, entering the closing state. Once closed, the library will not attempt to re-establish the connection without an explicit call to `connect()`.
+     * END CANONICAL DOCSTRING
+     *
      */
     close(): void;
     /**
