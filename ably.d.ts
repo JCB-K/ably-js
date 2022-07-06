@@ -1974,6 +1974,10 @@ declare namespace Types {
    */
   class RealtimeCallbacks extends RealtimeBase {
     /**
+     * BEGIN CANONICAL DOCSTRING
+     * An [`Auth`]{@link} object.
+     * END CANONICAL DOCSTRING
+     *
      * BEGIN LEGACY DOCSTRING
      * A reference to the Auth authentication object.
      * END LEGACY DOCSTRING
@@ -2049,6 +2053,10 @@ declare namespace Types {
    */
   class RealtimePromise extends RealtimeBase {
     /**
+     * BEGIN CANONICAL DOCSTRING
+     * An [`Auth`]{@link} object.
+     * END CANONICAL DOCSTRING
+     *
      * BEGIN LEGACY DOCSTRING
      * A reference to the Auth authentication object.
      * END LEGACY DOCSTRING
