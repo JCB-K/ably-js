@@ -3384,6 +3384,14 @@ declare namespace Types {
      */
     generateRandomKey(callback: Types.StandardCallback<CipherKey>): void;
     /**
+     * BEGIN CANONICAL DOCSTRING
+     * Retrieves, or optionally sets, the [`CipherParams`]{@link} for the channel.
+     *
+     * @param Params - Overrides the default parameters. A suitable `key` must be provided as a minimum.
+     *
+     * @returns A [`CipherParams`]{@link} object, using the default values for any field not supplied.
+     * END CANONICAL DOCSTRING
+     *
      * BEGIN LEGACY DOCSTRING
      * This call obtains a randomly-generated binary key of the specified key length.
      * END LEGACY DOCSTRING
