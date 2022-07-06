@@ -1655,6 +1655,12 @@ declare namespace Types {
      * @param ClientOptions - A [`ClientOptions`]{@link} object to configure the client connection to Ably.
      * END CANONICAL DOCSTRING
      *
+     * BEGIN CANONICAL DOCSTRING
+     * Constructs a realtime client object using an Ably [`ClientOptions`]{@link} object.
+     *
+     * @param ClientOptions A [`ClientOptions`]{@link} object to configure the client connection to Ably.
+     * END CANONICAL DOCSTRING
+     *
      * BEGIN LEGACY DOCSTRING
      * Creates an Ably client instance
      *
